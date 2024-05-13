@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,300;1,400&family=Poppins:wght@100;200;300;400;500&family=Raleway:wght@100;200;300;400;500&family=Roboto:wght@100;300;400;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.header {
+    height: 110px;
+    background-color: #08415C;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.267);
+}
+
+.divH1 {
+    width: 33%;
+    margin-left: 50px;
+}
+
+.h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+.span {
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+}
+
+.nav {
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+margin-right: 70px;
+}
+ 
+.botonBuscar {
+    width: 120px;
+    height: 30px;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   background-color: white; 
+   margin: 10px;
+}
+
+.botonBuscar:hover {
+    background-color: white;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.24);
+}
+
+.pBuscar {
+    margin-top: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: black;
+}
+
+.input{
+    width: 250px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: black;
+    padding: 7px;
+    font-size: 15px;
+}
+
+.divH2{
+    width: 33%;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 50px;
+}
+
+    .imgCarrito {
+        height: 30px;
+        width: 30px;
+       cursor: pointer;
+    }
+
+    .imgCarrito:hover {
+        height: 31px;
+        width: 31px;
+    }
+
+    .spanContador {
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+    }
+
+    /* Js */
+
+    .imgProductos {
+        width: 200px;
+        height: 200px;
+    }
+
+    .cajaProducto {
+        margin: 30px;
+        border-radius: 15px;
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.288);
+        width: 250px;
+        background-color: #08415c0a;
+        cursor: pointer;
+    }
+
+    .h4Producto{
+       color: #08415C;
+       padding: 10px;
+       font-family: 'Montserrat', sans-serif;
+       text-align: center;  
+       height: 50px;
+    }
+
+    .h6Producto {
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .btnAgregarAlCarrito {
+        background-color: #08415C;
+        color: white;
+        border: none;
+        padding: 7px;
+        border-radius: 7px;
+        font-family: 'Montserrat', sans-serif;
+        width: 180px;
+    }
+
+    .btnAgregarAlCarrito:active {
+        background-color: #06364d;
+    }
+
+    .btnVerCarrito {
+      background-color: #08415C;
+      border: none;
+    }
+
+    .btnEliminarDelCarrito {
+        background-color: #810000;
+        color: white;
+        border: none;
+        padding: 7px;
+        border-radius: 7px;
+        font-family: 'Montserrat', sans-serif;
+        width: 180px;
+    }
+
+    .btnEliminarDelCarrito:active {
+        background-color: #680000;
+    }
+
+    .btnVerTotal {
+        background-color: white;
+        border: 1px solid #06354b;
+        color: #06354b;
+        font-weight: 400;
+        padding: 7px;
+        border-radius: 7px;
+        font-family: 'Montserrat', sans-serif;
+        width: 130px;
+    }
+
+    .btnVerTotal:hover {
+        background-color: #06354b;
+        color: white;
+    }
+
+    .btnVerTotal:active {
+        background-color: #05293a;
+        color: white;
+    }
+
+    .totalCompra {
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .cajaTotalCompra {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        margin: 15px 0px 0px 15px;
+    }
+
+    .btnEVaciarCarrito {
+        background-color: white;
+        border: 1px solid #810000;
+        margin: 15px 0px 0px 0px;
+        color: #810000;
+        font-weight: 400;
+        padding: 6px;
+        border-radius: 7px;
+        font-family: 'Montserrat', sans-serif;
+        width: 100px;
+        font-size: 12px;
+    }
+
+    .btnEVaciarCarrito:hover {
+     background-color: #810000;
+     color: white;
+    }
+
+    .btnEVaciarCarrito:active{
+        background-color: #680000;
+        color: white;
+    }
+
+     .btnCerrarCarrito {
+        background-color: white;
+        border: none;
+     }
+
+     .h4Carrito {
+        font-family: 'Montserrat', sans-serif;
+        color: #05293a;
+     }
+
+     .modalContenedor {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.3);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all .5s;
+        opacity: 0;
+        visibility: hidden;
+        border-radius: 15px;
+     }
+
+     .modal-active{
+opacity: 1;
+visibility: visible;
+     }
+
+     .modalCarrito {
+        position: relative;
+        background-color: white;
+        min-width: 500px;
+        padding: 20px;
+        margin-top: -100%;
+        transition: all .5s;
+     }
+
+     .modal-active .modalCarrito{
+        margin-top: 0;
+     }
+
+     .modalCarrito .h4Carrito{
+       padding-bottom: 5px;
+     }
+
+     .modalCarrito .btnCerrarCarrito{
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        font-size: 20px;
+        
+     }
+
+    .modalCarrito .btnCerrarCarrito:hover {
+        cursor: pointer;
+    }
+     
+    .modalCarrito .btnCerrarCarrito:focus{
+        outline: none;
+    }
+
+    .modalCarrito .totalCompra{
+        padding-top: 10px;
+    }
+
+
+    .contenedorCarrito {
+        background-color: white;
+        width: 540px;
+        min-width: 250px;
+        max-width: 600px;
+        border: #05293a 1px solid;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .cajaProductoEnCarrito {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 5px;
+        border-radius: 10px;
+        cursor: pointer;
+        background-color: rgba(7, 7, 7, 0.034);
+        height: 50px;
+        padding: 20px;
+        border-left: 10px solid #05293a54; 
+        transition: all .4s;
+    }
+
+    .cajaProductoEnCarrito:hover {
+        border-left: 10px solid #08415C 
+    }
+
+    .pNombre {
+        color: #08415C;
+        margin: 0px;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;  
+        width: 180px;
+        font-weight: bold;
+    }
+
+    .pPrecio {
+        font-family: 'Montserrat', sans-serif;
+        margin-bottom: 0px;
+        font-size: 15px ;
+    }
+
+    .pCantidad {
+        font-family: 'Montserrat', sans-serif;
+        margin-bottom: 0px;
+        margin: 0px 10px;
+    }
+
+    .btnEliminar {
+      background-color: rgba(255, 255, 255, 0.034);
+      border: none;
+    } 
+
+    .btnComprarCarrito {
+        font-family: 'Montserrat', sans-serif;
+        padding: 7px;
+        border: none;
+        background-color: #08415C;
+        color: white;
+        border-radius: 7px;
+    }
+     
+    .btnComprarCarrito:active {
+        background-color: #05293a ; 
+    }
+
+    footer {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #05293a;
+        margin-top: 20px;
+    }
+
+    .pFooter {
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        margin: 0px;
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    hr{
+        width: 30%;
+        background-color: white;
+        height: 2px;
+        opacity: 100;
+    }
+
+    @media screen and (max-width:620px) {  
+
+        .divProducto{
+            width: 220px;
+        }
+
+        .imgProductos {
+            width: 180px;
+            height: 180px;
+        }
+    
+        .cajaProducto {
+            margin: 0px;
+            margin-top: 20px;
+            border-radius: 15px;
+            box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.288);
+            width: 220px;
+            background-color: #08415c0a;
+            cursor: pointer;
+        }
+    
+        .h4Producto{
+           color: #08415C;
+           padding: 10px;
+           font-family: 'Montserrat', sans-serif;
+           text-align: center;  
+           height: 0px;
+           font-size: 15px;
+        }
+    
+        .h6Producto {
+            font-family: 'Montserrat', sans-serif;
+        }
+    
+        .btnAgregarAlCarrito {
+            background-color: #08415C;
+            color: white;
+            border: none;
+            padding: 7px;
+            border-radius: 7px;
+            font-family: 'Montserrat', sans-serif;
+            width: 150px;
+        }
+        
+        .btnAgregarAlCarrito:active {
+            background-color: #06364d;
+        }
+    
+    }
